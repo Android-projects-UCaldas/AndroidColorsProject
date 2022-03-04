@@ -127,7 +127,7 @@
                 android:text="@string/Blue" />
 
             <SeekBar
-                android:id="@+id/seekBar3"
+                android:id="@+id/sbrBlue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
