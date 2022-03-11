@@ -137,44 +137,44 @@ public class MainActivity extends AppCompatActivity {
 
         text.append(getString(R.string.Your_score_is, String.valueOf(colorsGame.getScore())));
 
-        if (redDiff < 10){
+        if (redDiff > 10){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, RED.toLowerCase(), VERY_LOW.toLowerCase()));
-        }else if (redDiff < 0){
+        }else if (redDiff > 0){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, RED.toLowerCase(), LOW.toLowerCase()));
-        }else if (redDiff > -10){
+        }else if (redDiff < -10){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, RED.toLowerCase(), VERY_HIGH.toLowerCase()));
-        }else if (redDiff > 0){
+        }else if (redDiff < 0){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, RED.toLowerCase(), HIGH.toLowerCase()));
         }
 
-        if (greenDiff < 10){
+        if (greenDiff > 10){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, GREEN.toLowerCase(), VERY_LOW.toLowerCase()));
-        }else if (greenDiff < 0){
+        }else if (greenDiff > 0){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, GREEN.toLowerCase(), LOW.toLowerCase()));
-        }else if (greenDiff > -10){
+        }else if (greenDiff < -10){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, GREEN.toLowerCase(), VERY_HIGH.toLowerCase()));
-        }else if (greenDiff > 0){
+        }else if (greenDiff < 0){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, GREEN.toLowerCase(), HIGH.toLowerCase()));
         }
 
-        if (blueDiff < 10){
+        if (blueDiff > 10){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, BLUE.toLowerCase(), VERY_LOW.toLowerCase()));
-        }else if (blueDiff < 0){
+        }else if (blueDiff > 0){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, BLUE.toLowerCase(), LOW.toLowerCase()));
-        }else if (blueDiff > -10){
+        }else if (blueDiff < -10){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, BLUE.toLowerCase(), VERY_HIGH.toLowerCase()));
-        }else if (blueDiff > 0){
+        }else if (blueDiff < 0){
             tips.append("\n");
             tips.append(getString(R.string.X_is_Y, BLUE.toLowerCase(), HIGH.toLowerCase()));
         }
