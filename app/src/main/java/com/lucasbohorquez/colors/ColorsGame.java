@@ -127,16 +127,16 @@ public class ColorsGame {
         return onChangeTargetColorListener;
     }
 
-    public void setOnChangeTargetColorListener(OnChangeTargetColorListener onChangeTargetColorListener) {
-        this.onChangeTargetColorListener = onChangeTargetColorListener;
+    public void setOnChangeTargetColorListener(OnChangeTargetColorListener newDelegate) {
+        this.onChangeTargetColorListener = newDelegate;
     }
 
     public OnChangeProposedColorListener getOnChangeProposedColorListener() {
         return onChangeProposedColorListener;
     }
 
-    public void setOnChangeProposedColorListener(OnChangeProposedColorListener onChangeProposedColorListener) {
-        this.onChangeProposedColorListener = onChangeProposedColorListener;
+    public void setOnChangeProposedColorListener(OnChangeProposedColorListener newDelegate) {
+        this.onChangeProposedColorListener = newDelegate;
     }
 
     public void setProposedTextColor(int proposedTextColor) {
@@ -144,10 +144,10 @@ public class ColorsGame {
     }
 
     public interface OnChangeTargetColorListener{
-        void onChange(int backColor, int textColor);
+        public abstract void onChange(int backColor, int textColor);
     }
 
     public interface OnChangeProposedColorListener{
-        void onChange(int backColor, int textColor);
+        public abstract void onChange(int backColor, int textColor);
     }
 }
