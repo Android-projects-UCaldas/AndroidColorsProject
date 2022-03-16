@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         final String HIGH = getString(R.string.High);
 
         int targetColor = colorsGame.getTargetBackColor();
-        int proposedColor = colorsGame.getProposedTextColor();
+        int proposedColor = colorsGame.getProposedBackColor();
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         StringBuilder text = new StringBuilder();

@@ -53,7 +53,7 @@ public class ColorsGame {
         int greenVal = Color.green(backColor);
         int blueVal = Color.blue(backColor);
 
-        int grayVal = (redVal + greenVal + blueVal) / 3;
+        int grayVal = (int)(redVal * 0.20 + greenVal * 0.75 + blueVal + 0.05);
         int textColor = Color.BLACK;
 
         if(255 - grayVal > grayVal) textColor = Color.WHITE;
